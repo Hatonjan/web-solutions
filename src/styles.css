@@ -1,0 +1,229 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End of the reset */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #343646;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #2a2c39;
+    color: #fff;
+}
+
+.header-img {
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('/public/image/hero.png') center/cover no-repeat;
+    padding: 200px 0px;
+    text-align: center;
+    color: #CED9FA;
+    height: 1100px;
+}
+
+.hero h1 {
+    font-size: 150px;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.hero h4 {
+    font-size: 30px;
+}
+
+/* Personalize Section */
+.personalize {
+    background: url('/public/image/about.png') center/cover no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    height: 800px;
+}
+
+.personalize h2 {
+    font-size: 75px;
+    margin-bottom: 1rem;
+    color: #CED9FA;
+}
+
+.subtitle {
+    font-size: 25px;
+    color:#CED9FA;
+    margin-bottom: 1rem;
+}
+
+.description {
+    max-width: 750px;
+    margin: 150px 50px 100px;
+    color: #CED9FA;
+    font-size: 35px;
+    text-align: left;
+}
+
+.design-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.design-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 4rem 2rem;
+    background: url('/public/image/portfolio.png') center/cover no-repeat;
+    text-align: center;
+    height: 800px;
+}
+
+.portfolio h2 {
+    font-size: 75px;
+    margin-bottom: 2rem;
+    color: #CED9FA;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.portfolio-gallery img {
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    background: url('/public/image/contact.png') center/cover no-repeat;
+    padding: 4rem 2rem;
+    text-align: center;
+    color:#CED9FA
+}
+
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+input, textarea {
+    background-color: #09304f50;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.button {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #09304f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    width: 200px;
+}
+
+button:hover {
+    background-color: #0a2540;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #2a2c39;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .portfolio-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
