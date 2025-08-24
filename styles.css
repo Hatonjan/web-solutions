@@ -59,7 +59,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('/public/image/hero.png') center/cover no-repeat;
+    background: url('/image/hero.png') center/cover no-repeat;
     padding: 200px 0px;
     text-align: center;
     color: #CED9FA;
@@ -79,7 +79,7 @@ nav a:hover {
 
 /* Personalize Section */
 .personalize {
-    background: url('/public/image/about.png') center/cover no-repeat;
+    background: url('/image/about.png') center/cover no-repeat;
     padding: 4rem 2rem;
     text-align: center;
     height: 800px;
@@ -120,7 +120,7 @@ nav a:hover {
 /* Portfolio Section */
 .portfolio {
     padding: 4rem 2rem;
-    background: url('/public/image/portfolio.png') center/cover no-repeat;
+    background: url('/image/portfolio.png') center/cover no-repeat;
     text-align: center;
     height: 800px;
 }
@@ -146,7 +146,7 @@ nav a:hover {
 
 /* Contact Section */
 .contact {
-    background: url('/public/image/contact.png') center/cover no-repeat;
+    background: url('/image/contact.png') center/cover no-repeat;
     padding: 4rem 2rem;
     text-align: center;
     color:#CED9FA
